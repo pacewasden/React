@@ -11,7 +11,7 @@ class App extends Component {
       {name:"Jack", age:"9"}
     ]
   }
-
+  //setState function switches state information
   switchNameHandler =()=>{
     console.log("Button was clicked");
   }
@@ -23,7 +23,7 @@ class App extends Component {
         <p>This is still working</p>
         <button onClick={this.switchNameHandler}> Switch Person </button>
         <Person name={this.state.person[0].name} age= {this.state.person[0].age}/ >
-        <Person name={this.state.person[1].name} age= {this.state.person[1].age}> My hobbies include golf </Person>
+        <Person click= {this.switchNameHandler} name={this.state.person[1].name} age= {this.state.person[1].age}> My hobbies include golf </Person>
         <Person name={this.state.person[2].name} age= {this.state.person[2].age}/>
       </div>
     );
